@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import Axios from "axios";
-import "./Graphs.css";
 
 export const Graphs = (props) => {
     const [Title, setTitle] = useState();
@@ -26,7 +25,8 @@ export const Graphs = (props) => {
             setVARAHAMIHIRA(res.data.SPORTS_BOYS[props.sportsIndex].VARAHAMIHIRA);
             setRAMANUJA(res.data.SPORTS_BOYS[props.sportsIndex].RAMANUJA);
             setKAPILA(res.data.SPORTS_BOYS[props.sportsIndex].KAPILA);
-        });
+        }).catch(err => console.log(err)
+        );
     }
 
     useEffect(() => {
@@ -35,18 +35,16 @@ export const Graphs = (props) => {
 
     return (
     <div>
-        <div className="container">
-        <h3 className='title'>{Title}</h3>
         <div id='Graph' className=''>
-            <div className='hostel-title'>CHARAKA</div><div className='hostel-score'> {CHARAKA}</div>
-            <div className='hostel-title'>SUSRUTA</div><div className='hostel-score'>{SUSRUTA}</div>
-            <div className='hostel-title'>KAUTILYA</div><div className='hostel-score'>{KAUTILYA}</div>
-            <div className='hostel-title'>VYASA</div><div className='hostel-score'>{VYASA}</div>
-            <div className='hostel-title'>BRAHMAGUPTA</div><div className='hostel-score'>{BRAHMAGUPTA}</div>
-            <div className='hostel-title'>VARAHAMIHIRA</div><div className='hostel-score'>{VARAHAMIHIRA}</div>
-            <div className='hostel-title'>RAMANUJA</div><div className='hostel-score'>{RAMANUJA}</div>
-            <div className='hostel-title'>KAPILA</div><div className='hostel-score'>{KAPILA}</div>
-        </div>
+        <h3 className='title'>{Title}</h3>
+            <div className='hostel-scores'>CHARAKA <span>{CHARAKA}</span></div>
+            <div className='hostel-scores'>SUSRUTA<span>{SUSRUTA}</span></div>
+            <div className='hostel-scores'>KAUTILYA<span>{KAUTILYA}</span></div>
+            <div className='hostel-scores'>VYASA<span>{VYASA}</span></div>
+            <div className='hostel-scores'>BRAHMAGUPTA<span>{BRAHMAGUPTA}</span></div>
+            <div className='hostel-scores'>VARAHAMIHIRA<span>{VARAHAMIHIRA}</span></div>
+            <div className='hostel-scores'>RAMANUJA<span>{RAMANUJA}</span></div>
+            <div className='hostel-scores'>KAPILA<span>{KAPILA}</span></div>
         </div>
     </div>
   )
