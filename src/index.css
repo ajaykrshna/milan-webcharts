@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: Inter;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  background-color: #212121;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.mainpage h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.mainpage h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.mainpage h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+.mainpage--options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+.sub--options {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.sub--options p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sub--options p:hover {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: aqua;
+}
+
+.sub--select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sub--select button {
+  border: none;
+  outline: none;
+  background: #00d9ff;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: large;
+  width: 100px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.sub--select label {
+  font-size: large;
+}
+
+.sub--select select {
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
