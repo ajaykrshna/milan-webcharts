@@ -1,6 +1,9 @@
 import Chart from "./Chart"
+import ChartOvr from "./ChartOvr"
+import data from '../components/scores'
 
 export default function MainPage() {
+    const CRICKET = 'FOOTBALL'
     return (
         <div className="mainpage">
             <h1>Milan Scores Page Template</h1>
@@ -16,7 +19,7 @@ export default function MainPage() {
                 </div>
             </div>
             <div className="mainpage--graph">
-                <Chart />
+                <ChartOvr dataVal={data.LEADERBOARD.TOTAL}/>
             </div>
             <div className="mainpage--sub">
                 <h3>Categories</h3>
@@ -47,7 +50,7 @@ export default function MainPage() {
                     </div>
                 </div>
                 <div className="sub--graph">
-                    <Chart />
+                    <Chart dataVal={data.SPORTS_BOYS[CRICKET]} head={CRICKET}/>
                 </div>
             </div>
         </div>

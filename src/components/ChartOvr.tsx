@@ -3,21 +3,20 @@ import {
 } from 'recharts';
 
 
-
-export default function Chart(props) {
+export default function ChartOvr(props) {
 
     const CustomizedLabel = ({ x, y, value }) => {
+        const value2 = value/3 
         return (
-            <text x={x + value * 3 / 2} y={y + 18} fill='#fff' fontSize='0.8rem' textAnchor="start">{value}</text>
+            <text x={x + value2 * 3 / 2} y={y + 20} fill='#fff' fontSize='0.8rem' fontWeight='600' textAnchor="start">{value}</text>
         );
-    }
+    }    
 
     return (
-        <div className='chart'>
-            <h2>{props.head}</h2><br />
+        <div className='chartovr'>
             <BarChart
-                width={500}
-                height={300}
+                width={1000}
+                height={500}
                 data={props.dataVal}
                 layout='vertical'
                 margin={{ right: 20, bottom: 20, left: 50 }}
