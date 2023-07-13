@@ -1,0 +1,581 @@
+{
+  "SPORTS_BOYS": {
+  "CRICKET": [
+    {
+      "hostel": "CHARAKA",
+      "score": 100
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 40
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 10
+    },
+    {
+      "hostel": "VYASA",
+      "score": 10
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 20
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 70
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "FOOTBALL": [
+    {
+      "hostel": "CHARAKA",
+      "score": 70
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 100
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 10
+    },
+    {
+      "hostel": "VYASA",
+      "score": 20
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 10
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 40
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "HOCKEY": [
+    {
+      "hostel": "CHARAKA",
+      "score": 70
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 40
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 10
+    },
+    {
+      "hostel": "VYASA",
+      "score": 100
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 20
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 10
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 0
+    }
+  ],
+  "VOLLEYBALL": [
+    {
+      "hostel": "CHARAKA",
+      "score": 100
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 20
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 10
+    },
+    {
+      "hostel": "VYASA",
+      "score": 10
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 40
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 70
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 10
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "BASKETBALL": [
+    {
+      "hostel": "CHARAKA",
+      "score": 100
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 10
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 10
+    },
+    {
+      "hostel": "VYASA",
+      "score": 20
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 70
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 40
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "BADMINTON": [
+    {
+      "hostel": "CHARAKA",
+      "score": 100
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 20
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 10
+    },
+    {
+      "hostel": "VYASA",
+      "score": 40
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 10
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 70
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 10
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "TENNIS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 10
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 10
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 70
+    },
+    {
+      "hostel": "VYASA",
+      "score": 40
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 10
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 20
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 100
+    }
+  ],
+  "TABLE TENNIS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 10
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 40
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 20
+    },
+    {
+      "hostel": "VYASA",
+      "score": 10
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 10
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 100
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 70
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "CARROM": [
+    {
+      "hostel": "CHARAKA",
+      "score": 10
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 10
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 20
+    },
+    {
+      "hostel": "VYASA",
+      "score": 70
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 100
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 40
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "CHESS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 100
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 70
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 20
+    },
+    {
+      "hostel": "VYASA",
+      "score": 10
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 10
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 40
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "SQUASH": [
+    {
+      "hostel": "CHARAKA",
+      "score": 50
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 5
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 5
+    },
+    {
+      "hostel": "VYASA",
+      "score": 20
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 5
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 35
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 10
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 5
+    }
+  ],
+  "WEIGHTLIFTING": [
+    {
+      "hostel": "CHARAKA",
+      "score": 20
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 10
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 40
+    },
+    {
+      "hostel": "VYASA",
+      "score": 10
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 70
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 10
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 100
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 10
+    }
+  ],
+  "ESPORTS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 80
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 20
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 20
+    },
+    {
+      "hostel": "VYASA",
+      "score": 140
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 20
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 200
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 40
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 20
+    }
+  ],
+  "AQUATICS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 210
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 21
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 21
+    },
+    {
+      "hostel": "VYASA",
+      "score": 84
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 147
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 42
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 21
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 21
+    }
+  ],
+  "ATHLETICS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 300
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 30
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 30
+    },
+    {
+      "hostel": "VYASA",
+      "score": 30
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 60
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 210
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 150
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 30
+    }
+  ],
+  "TOTAL POINTS": [
+    {
+      "hostel": "CHARAKA",
+      "score": 1330
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 446
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 306
+    },
+    {
+      "hostel": "VYASA",
+      "score": 614
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 602
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 807
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 671
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 266
+    }
+  ],
+  "OVERALL SCORE": [
+    {
+      "hostel": "CHARAKA",
+      "score": 263.7842126
+    },
+    {
+      "hostel": "SUSRUTA",
+      "score": 88.45696152
+    },
+    {
+      "hostel": "KAUTILYA",
+      "score": 60.6902023
+    },
+    {
+      "hostel": "VYASA",
+      "score": 121.7770726
+    },
+    {
+      "hostel": "BRAHMAGUPTA",
+      "score": 119.3970647
+    },
+    {
+      "hostel": "VARAHAMIHIRA",
+      "score": 160.0555335
+    },
+    {
+      "hostel": "RAMANUJA",
+      "score": 133.0821103
+    },
+    {
+      "hostel": "KAPILA",
+      "score": 52.75684252
+    }
+  ]
+}}
