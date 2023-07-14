@@ -1,5 +1,5 @@
 import ChartOvr from "./ChartOvr"
-import data from '../components/scores'
+import data from '../data/scores'
 import ChartDisplay from './ChartDisplay'
 import { useState, useEffect } from "react"
 import Working from "./Working"
@@ -19,10 +19,10 @@ export default function MainPage() {
             setPageTo(<ChartDisplay dataItem='SPORTS_GIRLS' />)
         }
         else if (page === 2) {
-            setPageTo(<Working />)
+            setPageTo(<ChartDisplay dataItem='CULTI' />)
         }
         else {
-            setPageTo(<Working />)
+            setPageTo(<ChartDisplay dataItem='TECHY' />)
         }
     }, [page])
     useEffect(() => {

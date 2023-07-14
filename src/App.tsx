@@ -1,5 +1,5 @@
 import MainPage from './components/MainPage'
-import data from './components/scores'
+import data from './data/scores'
 
 function App() {
   return (

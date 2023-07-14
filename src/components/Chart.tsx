@@ -17,7 +17,7 @@ export default function Chart(props) {
             <h2>{props.head}</h2><br />
             <BarChart
                 width={500}
-                height={300}
+                height={500}
                 data={props.dataVal}
                 layout='vertical'
                 margin={{ right: 20, bottom: 20, left: 50 }}

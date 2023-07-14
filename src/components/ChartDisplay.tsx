@@ -1,13 +1,22 @@
 import { useState, useEffect } from 'react'
+import axios from 'axios';
 import Chart from './Chart'
-import data from './scores'
 import { LiveScoresComponent } from './LiveScoresComponent';
 
+const data = []
+
+const FetchData = async () => {
+    axios.get('./output.json').then((res) => {
+        data.push(res.data)
+    })
+}
+FetchData();
+
 export default function ChartDisplay(props) {
-    const [item, setItem] = useState(Object.keys(data[props.dataItem])[0])
+    const [item, setItem] = useState(Object.keys(data[0][props.dataItem])[0])
 
     const options = [];
-    for (const item in data[props.dataItem]) {
+    for (const item in data[0][props.dataItem]) {
         options.push(<option value={item} key={item}>{item}</option>)
     }
 
@@ -37,8 +46,8 @@ export default function ChartDisplay(props) {
                 </div>
             </div>
             <div className="sub--graph">
-                {graphTable ? <Chart dataVal={data[props.dataItem][item]} head={item} /> 
-                : <LiveScoresComponent/> }
+                {graphTable ? <Chart dataVal={data[0][props.dataItem][item]} head={item} />
+                    : <LiveScoresComponent />}
             </div>
         </>
     )
