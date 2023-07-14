@@ -1,36 +1,52 @@
-import React,{useState,useEffect} from 'react'
-import { Table } from './Table';
-import "./Graphs.css";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export const LiveScoresComponent = () => {    
-   
+export const LiveScoresComponent = () => {
+
+  const [data, setdata] = useState(null);
+
+  useEffect(() => {
+    const FetchData = async () => {
+      axios.get('./output.json').then((res) => {
+        setdata(res.data);
+      })
+    }
+    FetchData();
+
+  }, [])
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
+  const SPORTS_BOYS_DATA = data.SPORTS_BOYS;
+
+  const sportsItems = Object.keys(SPORTS_BOYS_DATA).map((sport, index) => (
+    <div key={index} id='score-card'>
+      <h2>{sport}</h2>
+      {SPORTS_BOYS_DATA[sport].map((item, subIndex) => (
+        <div key={subIndex}>
+          <p className='box-1'>{item.score}</p>
+        </div>
+      ))}
+    </div>
+  ));
+
+  const hostel_titles = SPORTS_BOYS_DATA.CRICKET.map((title, index) => (
+    <div id='title' key={index}>
+      <p>{title.hostel}</p>
+    </div>
+  ));
+
   return (
     <>
-    <div className="container" >
-      <div id="Graph">
-            <div className='hostel-title'>BOYS SPORTS</div>
-            <div className='hostel-title'>CHARAKA</div>
-            <div className='hostel-title'>SUSRUTA</div>
-            <div className='hostel-title'>KAUTILYA</div>
-            <div className='hostel-title'>VYASA</div>
-            <div className='hostel-title'>BRAHMAGUPTA</div>
-            <div className='hostel-title'>VARAHAMIHIRA</div>
-            <div className='hostel-title'>RAMANUJA</div>
-            <div className='hostel-title'>KAPILA</div>
-            <Table sportsIndex = {0}/>
-            <Table sportsIndex = {1}/>
-            <Table sportsIndex = {2}/>
-            <Table sportsIndex = {3}/>
-            <Table sportsIndex = {4}/>
-            <Table sportsIndex = {5}/>
-            <Table sportsIndex = {6}/>
-            <Table sportsIndex = {7}/>
-            <Table sportsIndex = {8}/>
+      <div id='score-cards'>
+        <div id='titles'>
+          <h2>HOSTELS</h2>
+          {hostel_titles}
+        </div>
+        {sportsItems}
       </div>
-            
-    </div>
-           
-    
     </>
   )
 }

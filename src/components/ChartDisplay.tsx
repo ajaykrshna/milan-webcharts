@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react'
 import Chart from './Chart'
 import data from './scores'
+import { LiveScoresComponent } from './LiveScoresComponent';
 
 export default function ChartDisplay(props) {
     const [item, setItem] = useState(Object.keys(data[props.dataItem])[0])
 
     const options = [];
     for (const item in data[props.dataItem]) {
-        options.push(<option value={item}>{item}</option>)
+        options.push(<option value={item} key={item}>{item}</option>)
     }
+
+    const [graphTable, setGraphTable] = useState(true)
     return (
         <>
             <form className="sub--select">
@@ -22,17 +25,20 @@ export default function ChartDisplay(props) {
                 </select>
             </form>
             <div className="mainpage--options">
-                <div>
-                    <input type="radio" id="subgraph" />
-                    <label htmlFor="subgraph">Graph</label>
+                <div
+                    className={graphTable ? "activeop" : "pendingop"}
+                    onClick={() => setGraphTable(!graphTable)}>
+                    Graph
                 </div>
-                <div>
-                    <input type="radio" id="subtable" />
-                    <label htmlFor="subtable">Table</label>
+                <div
+                    className={!graphTable ? "activeop" : "pendingop"}
+                    onClick={() => setGraphTable(!graphTable)}>
+                    Table
                 </div>
             </div>
             <div className="sub--graph">
-                <Chart dataVal={data[props.dataItem][item]} head={item} />
+                {graphTable ? <Chart dataVal={data[props.dataItem][item]} head={item} /> 
+                : <LiveScoresComponent/> }
             </div>
         </>
     )

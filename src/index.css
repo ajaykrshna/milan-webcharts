@@ -40,6 +40,17 @@
   margin: 10px 0;
 }
 
+.activeop {
+  font-weight: 700;
+  color: #00d9ff;
+  cursor: pointer;
+}
+
+.pendingop {
+  font-weight: 400;
+  cursor: pointer;
+}
+
 .chartovr {
   margin-top: 20px;
   display: flex;
@@ -126,4 +137,31 @@
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* For tables */
+
+#score-cards {
+    display: flex;
+    gap: 4rem;
+}
+
+#titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-1 {
+    background-color: rgb(80, 80, 80);
+    border-radius: 2px;
+}
+
+#score-cards h2 {
+    font-size: 1rem;
+    padding: 3px;
+}
+
+#score-cards p {
+    font-size: 1rem;
+    padding: 3px;
 }

@@ -3,12 +3,14 @@ import data from '../components/scores'
 import ChartDisplay from './ChartDisplay'
 import { useState, useEffect } from "react"
 import Working from "./Working"
+import { LiveScoresComponent } from "./LiveScoresComponent"
 
 export default function MainPage() {
     const [page, setPage] = useState(0)
     const [mainPage, setMainPage] = useState(0)
     const [pageto, setPageTo] = useState(<></>)
     const [mainPageTo, setMainPageTo] = useState(<></>)
+    const [graphTable, setGraphTable] = useState(true)
     useEffect(() => {
         if (page === 0) {
             setPageTo(<ChartDisplay dataItem='SPORTS_BOYS' />)
@@ -17,10 +19,10 @@ export default function MainPage() {
             setPageTo(<ChartDisplay dataItem='SPORTS_GIRLS' />)
         }
         else if (page === 2) {
-            setPageTo(<Working/>)
+            setPageTo(<Working />)
         }
         else {
-            setPageTo(<Working/>)
+            setPageTo(<Working />)
         }
     }, [page])
     useEffect(() => {
@@ -31,6 +33,7 @@ export default function MainPage() {
             setMainPageTo(<Working />)
         }
     }, [mainPage])
+
     return (
         <div className="mainpage">
             <h1>Milan Scores Page Template</h1>
@@ -43,17 +46,19 @@ export default function MainPage() {
                 <p onClick={() => setMainPage(4)} className={(mainPage === 4) ? 'active' : "notactive"}>Techy</p>
             </div>
             <div className="mainpage--options">
-                <div>
-                    <input type="radio" id="ovrgraph" />
-                    <label htmlFor="ovrgraph">Graph</label>
+                <div
+                    className={graphTable ? "activeop" : "pendingop"}
+                    onClick={() => setGraphTable(!graphTable)}>
+                    Graph
                 </div>
-                <div>
-                    <input type="radio" id="ovrtable" />
-                    <label htmlFor="ovrtable">Table</label>
+                <div
+                    className={!graphTable ? "activeop" : "pendingop"}
+                    onClick={() => setGraphTable(!graphTable)}>
+                    Table
                 </div>
             </div>
             <div className="mainpage--graph">
-                {mainPageTo}
+                {graphTable ? mainPageTo : <LiveScoresComponent />}
             </div>
             <div className="mainpage--sub">
                 <h3>Categories</h3>
